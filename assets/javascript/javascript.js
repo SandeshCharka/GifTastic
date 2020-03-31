@@ -20,7 +20,7 @@ function createButtons() {
 
 $(document).on('click', '.searchButtons', function () {
     var data = $(this).data('type');
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + data + '&limit=10&api_key=' + ApiKey + '';
+    var queryURL = '//api.giphy.com/v1/gifs/search?q=' + data + '&limit=10&api_key=' + ApiKey + '';
     $.ajax({
         url: queryURL,
         method: "GET"
